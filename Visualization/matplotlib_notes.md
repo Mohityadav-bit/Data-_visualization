@@ -5,9 +5,9 @@
 ## 🔹 1. Importing Libraries
 
 ### python
-```import pandas as pd
+`import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt 
+import matplotlib.pyplot as plt`
 
 ## 📌 Notes:
 pandas (pd) → Data handling (tables, CSV files)
