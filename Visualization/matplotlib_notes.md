@@ -4,29 +4,29 @@
 
 ## 🔹 1. Importing Libraries
 
-```python
+### python
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-📌 Notes:
+## 📌 Notes:
 pandas (pd) → Data handling (tables, CSV files)
 numpy (np) → Numerical operations (arrays, math)
 matplotlib.pyplot (plt) → Data visualization (graphs)
-🧠 Key Point:
+## 🧠 Key Point:
 plt acts like a drawing canvas
 Flow: Data → Process → Visualize
 🔹 2. Creating Data using NumPy
 x = np.linspace(0,5,11)
 
 
-📌 Definition:
+## 📌 Definition:
 linspace() generates equally spaced values in a given range.
 
-📌 Syntax:
+### 📌 Syntax:
 np.linspace(start, stop, num_points)
 
-📌 Parameters:
+### 📌 Parameters:
 start → Starting value
 stop → Ending value
 num_points → Total values required
@@ -37,13 +37,13 @@ Helpful in plotting curves
 y = x**2
 
 
-📌 Definition:
+## 📌 Definition:
 Broadcasting means applying operations element-wise automatically on arrays.
 
-🧠 Logic:
+### 🧠 Logic:
 Each element of x is squared → stored in y
 No need for loops
-📌 Advantages:
+### 📌 Advantages:
 Faster computation
 Cleaner code
 Important for ML operations
@@ -51,77 +51,77 @@ Important for ML operations
 plt.plot(x,y)
 
 
-📌 Definition:
+## 📌 Definition:
 Creates a line graph between x and y values.
 
-📌 Syntax:
+### 📌 Syntax:
 plt.plot(x, y, color, linestyle, linewidth, marker)
-📌 Important Parameters:
+### 📌 Important Parameters:
 x → X-axis data
 y → Y-axis data
 color → Line color
 linestyle → Line pattern (-, --, :)
 linewidth → Thickness of line
 marker → Points (o, *, .)
-🧠 Logic:
+### 🧠 Logic:
 Plots points (x[i], y[i])
 Joins them → forms a curve/line
 🔹 5. Adding Title and Labels
 plt.title("Sample Data")
 plt.xlabel("X-axis")
 plt.ylabel("Y-axis")
-📌 Purpose:
+### 📌 Purpose:
 Makes graph understandable and meaningful
-📌 Syntax:
+### 📌 Syntax:
 plt.title(label)
 plt.xlabel(label)
 plt.ylabel(label)
-🧠 Logic:
+### 🧠 Logic:
 Without labels → graph has no context
 Used in reports, projects, presentations
 🔹 6. Subplots in Matplotlib
 plt.subplot(nrows, ncols, index)
 
 
-📌 Definition:
+### 📌 Definition:
 Used to create multiple plots in a single figure
 
-📌 Parameters:
+### 📌 Parameters:
 nrows → Number of rows
 ncols → Number of columns
 index → Position of graph (starts from 1)
-📌 Example:
+### 📌 Example:
 plt.subplot(1,2,1)
 plt.plot(x,y)
-
 plt.subplot(1,2,2)
 plt.plot(y,x)
-🧠 Logic:
+
+### 🧠 Logic:
 Divides screen into grid
 Each subplot occupies a position
 🔹 7. Matplotlib Working (Important Concept)
-📌 Structure:
+### 📌 Structure:
 Figure → Entire canvas
 Axes → Individual graph
-🧠 Flow:
+### 🧠 Flow:
 Figure → Axes → Plot → Show
 🔹 8. Complete Basic Code Example
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Data creation
+## Data creation
 x = np.linspace(0,5,11)
 y = x**2
 
-# Plotting
+## Plotting
 plt.plot(x,y)
 
-# Labels
+## Labels
 plt.title("Sample Data")
 plt.xlabel("X-axis")
 plt.ylabel("Y-axis")
 
-# Show graph
+## Show graph
 plt.show()
 🔥 Quick Revision (1-Min Recap)
 linspace() → generate data
